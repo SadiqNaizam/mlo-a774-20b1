@@ -1,14 +1,16 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import * as React from 'react';
+import AuthCard from '@/components/Auth/AuthCard';
 
-const Index = () => {
+/**
+ * The main login page for the application.
+ * It uses a full-screen, centered layout to display the authentication card.
+ */
+const IndexPage: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="flex min-h-screen w-full items-center justify-center bg-background p-4">
+      <AuthCard />
+    </main>
   );
 };
 
-export default Index;
+export default IndexPage;
